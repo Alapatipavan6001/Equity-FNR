@@ -49,3 +49,10 @@ https://en.wikipedia.org/wiki/Tata_Group
 - faiss_store_openai.pkl: A pickle file to store the FAISS index.
 - .env: Configuration file for storing your OpenAI API key
 
+##Issues with chatgpt:
+
+1. Copy pasting articles is tedious task
+
+2. We need aggregate knowledge base tool to get the answers
+
+3. Chatgpt has the word limit 3000 words 
