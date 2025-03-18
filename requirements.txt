@@ -1,0 +1,6 @@
+langchain
+streamlit==1.22.0
+unstructured==0.9.2
+tiktoken
+faiss-cpu
+OpenAI == 0.28.0
