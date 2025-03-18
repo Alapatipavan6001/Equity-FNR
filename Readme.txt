@@ -1,6 +1,9 @@
-📈 Equity: FNR
+📰 FNR: News Research Tool
+FNR (Financial News Research) is a powerful tool that processes and analyzes news articles from specified URLs. It leverages advanced AI models and frameworks such as:
 
-FNR is a news research tool that processes and analyzes news articles from given URLs . It leverages LangChain, OpenAI, and Streamlit to provide insights and answers based on the content of the articles.
+LangChain – For orchestrating and managing the sequence of operations.
+OpenAI API – For performing NLP tasks like summarization and answering questions.
+Streamlit – For creating an interactive web-based user interface
 
  #Features
 
@@ -9,6 +12,19 @@ FNR is a news research tool that processes and analyzes news articles from given
 - Create embeddings for the text using OPENAi embedding model
 - Store embeddings in a FAISS index for efficient retrieval
 - Query the processed data to get answers and sources
+
+#installation:
+
+1. Clone the repository
+git clone https://g
+github.com/Alapatipavan6001/Equity-FNR.git
+ 2.install dependencies
+!pip install requriments.txt (its for google colab)
+
+3.Run the application using(for google colab to run streamlit app) :
+!curl https://loca.lt/mytunnelpassword(It retrieves a secure tunnel URL or token required to establish a connection through localtunnel for accessing the Streamlit application)
+!streamlit run FNR.py & npx localtunnel --port 8501( exposes the Streamlit application running on port 8501 to a public URL, allowing you to access the app from any browser)
+
 
 ## Usage:
 
@@ -32,3 +48,4 @@ https://en.wikipedia.org/wiki/Tata_Group
 - requirements.txt: A list of required Python packages for the project.
 - faiss_store_openai.pkl: A pickle file to store the FAISS index.
 - .env: Configuration file for storing your OpenAI API key
+
