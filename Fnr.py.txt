@@ -1,0 +1,76 @@
+%%writefile app.py
+import os
+import streamlit as st
+import time
+import langchain
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import RetrievalQAWithSourcesChain
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.document_loaders import UnstructuredURLLoader
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
+
+# Set your OpenAI API key (replace 'your_api_key_here' with your actual key)
+os.environ['OPENAI_API_KEY'] = "your open api key'
+
+
+st.title("Retrieval QA with Sources")
+
+# Input: URLs (one per line) provided by the user via the web UI.
+urls_input = st.text_area(
+    "Enter URLs (one per line):"
+)
+
+# Input: Question to ask
+question = st.text_input("Enter your question:")
+
+if st.button("Run Query"):
+    if not urls_input:
+        st.error("Please enter at least one URL.")
+    elif not question:
+        st.error("Please enter a question.")
+    else:
+        # Parse URLs from the input text area
+        urls = [url.strip() for url in urls_input.splitlines() if url.strip()]
+        st.write("Loading documents from URLs...")
+        loaders = UnstructuredURLLoader(urls=urls)
+        data = loaders.load()
+        st.write(f"Number of raw documents loaded: {len(data)}")
+        
+        st.write("Splitting documents into chunks...")
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=200)
+        docs = text_splitter.split_documents(data)
+        st.write(f"Number of document chunks: {len(docs)}")
+        
+        st.write("Creating FAISS vector index...")
+        embeddings = OpenAIEmbeddings()
+        vectorindex_openai = FAISS.from_documents(docs, embeddings)
+        faiss_index_path = "/content/faiss_index"
+        vectorindex_openai.save_local(faiss_index_path)
+        
+        st.write("Loading FAISS vector index...")
+        vectorindex_openai = FAISS.load_local(
+            faiss_index_path,
+            embeddings,
+            allow_dangerous_deserialization=True
+        )
+        
+        st.write("Initializing ChatOpenAI model...")
+        llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.9, max_tokens=500)
+        
+        st.write("Creating retrieval chain...")
+        chain = RetrievalQAWithSourcesChain.from_llm(
+            llm=llm, 
+            retriever=vectorindex_openai.as_retriever()
+        )
+        
+        st.write("Running query...")
+        result = chain({"question": question}, return_only_outputs=True)
+        st.write("Result:")
+        st.write(result)
+
+
+#note imp commands:
+!curl https://loca.lt/mytunnelpassword
+
+!streamlit run app.py & npx localtunnel --port 8501
