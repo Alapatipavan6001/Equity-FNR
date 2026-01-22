@@ -1,0 +1,306 @@
+{
+  "page": 1,
+  "file_name": "page_001.png",
+  "regions": [
+    {
+      "region_id": 2,
+      "type": "figure",
+      "confidence": 0.9852989912033081,
+      "bbox": [
+        0.47315253363715276,
+        0.22800774468315974,
+        0.7101825629340278,
+        0.49839341905381945
+      ],
+      "figure_image": "figures\\page_001_metadata_region2_figure.png",
+      "figure_summary": "The image is a satellite map highlighting a specific area marked as the 'PROJECT SITE'.",
+      "title": null
+    },
+    {
+      "region_id": 3,
+      "type": "figure",
+      "confidence": 0.9771172404289246,
+      "bbox": [
+        0.21921992549189814,
+        0.219695315890842,
+        0.45552499276620373,
+        0.5110091824001736
+      ],
+      "figure_image": "figures\\page_001_metadata_region3_figure.png",
+      "figure_summary": "The figure is a map showing a project site outlined in a rectangle with an arrow pointing to it.",
+      "title": null
+    },
+    {
+      "region_id": 4,
+      "type": "plain_text",
+      "confidence": 0.9337716698646545,
+      "bbox": [
+        0.03175819114402489,
+        0.21849829779730903,
+        0.1982102005570023,
+        0.2955516899956597
+      ],
+      "region_type": "section",
+      "title": {
+        "text": "LEGAL DESCRIPTION",
+        "confidence": 0.95
+      },
+      "content": [
+        "THE WEST ONE-HALF OF LOT 5 IN THE NORTHEAST 1/4 OF SECTION 12, TOWNSHIP 30",
+        "SOUTH, RANGE 15 EAST, AS SHOWN ON PLAT OF PINELLAS GROVES, INC., AS RECORDED",
+        "IN PLAT BOOK 1, PAGE 55 OF THE PUBLIC RECORDS OF PINELLAS COUNTY, FLORIDA,",
+        "LESS THAT PART LYING WITHIN 72.00 FEET OF THE SURVEY LINE OF STATE ROAD NO.",
+        "688, SECTION 15120 AS SAID SURVEY LINE IS MORE PARTICULARLY DESCRIBED IN DEED",
+        "TO STATE OF FLORIDA, FILED APRIL 5, 1983 IN OFFICIAL RECORDS BOOK 1651, PAGE",
+        "632 OF SAID RECORDS, LESS AND EXCEPT THE SOUTH 300 FEET THEREOF."
+      ]
+    },
+    {
+      "region_id": 5,
+      "type": "plain_text",
+      "confidence": 0.9187652468681335,
+      "bbox": [
+        0.25964931911892364,
+        0.036786299811469185,
+        0.6674658203125,
+        0.09569368998209636
+      ],
+      "region_type": "heading",
+      "title": {
+        "text": null,
+        "confidence": 0
+      },
+      "content": [
+        "NEW BUILDING"
+      ]
+    },
+    {
+      "region_id": 6,
+      "type": "plain_text",
+      "confidence": 0.9107743501663208,
+      "bbox": [
+        0.2985524269386574,
+        0.10549076504177517,
+        0.630400390625,
+        0.20267564561631946
+      ],
+      "region_type": "heading",
+      "title": {
+        "text": null,
+        "confidence": 0
+      },
+      "content": [
+        "SECTION 12 - TOWNSHIP 30 S - RANGE 15 E",
+        "PARCEL NO. 12-30-15-70542-100-0501",
+        "LARGO"
+      ]
+    },
+    {
+      "region_id": 7,
+      "type": "plain_text",
+      "confidence": 0.7267439365386963,
+      "bbox": [
+        0.02953177840621383,
+        0.6125661892361111,
+        0.18388518156828704,
+        0.6958640543619792
+      ],
+      "region_type": "section",
+      "title": {
+        "text": "OWNER CONTACT",
+        "confidence": 1
+      },
+      "content": [
+        "OWNER",
+        "ADDRESS 1",
+        "ADDRESS 2"
+      ]
+    },
+    {
+      "region_id": 8,
+      "type": "plain_text",
+      "confidence": 0.3319801688194275,
+      "bbox": [
+        0.7528927951388888,
+        0.47913987901475696,
+        0.8928153030960648,
+        0.581278550889757
+      ],
+      "region_type": "paragraph",
+      "title": {
+        "text": null,
+        "confidence": 0
+      },
+      "content": [
+        "Donald B. Fairbairn, P.E. State Of Florida Professional",
+        "Engineer License Number 44971.",
+        "This item has been electronically signed and sealed by",
+        "Donald B. Fairbairn, P.E.",
+        "on the date shown below using a SHA authentication code.",
+        "Printed copies of this document are not considered signed",
+        "and sealed and the SHA authentication code must be verified",
+        "on any electronic copies.",
+        "Signed: 03/04/2021"
+      ]
+    },
+    {
+      "region_id": 9,
+      "type": "table",
+      "confidence": 0.9623855948448181,
+      "bbox": [
+        0.7280079029224537,
+        0.21995671590169272,
+        0.8998516167534722,
+        0.37211052788628474
+      ],
+      "table_structured": {
+        "table_metadata": {
+          "title": "INDEX OF SHEETS",
+          "notes": null,
+          "confidence": 1.0
+        },
+        "header_structure": {
+          "rows": [
+            [
+              "Sheet Number",
+              "Description"
+            ]
+          ],
+          "normalized_columns": [
+            {
+              "id": "sheet_number",
+              "name": "Sheet Number",
+              "path": [
+                "Sheet Number"
+              ],
+              "type": "string"
+            },
+            {
+              "id": "description",
+              "name": "Description",
+              "path": [
+                "Description"
+              ],
+              "type": "string"
+            }
+          ]
+        },
+        "rows": [
+          {
+            "sheet_number": "C1.1",
+            "description": "COVER SHEET"
+          },
+          {
+            "sheet_number": "C1.2",
+            "description": "CIVIL SPECIFICATIONS"
+          },
+          {
+            "sheet_number": "C1.3",
+            "description": "WETLANDS"
+          },
+          {
+            "sheet_number": "C2.2",
+            "description": "SITE PREPARATION PLAN"
+          },
+          {
+            "sheet_number": "C3.1",
+            "description": "PROPOSED SITE PLAN"
+          },
+          {
+            "sheet_number": "C4.1",
+            "description": "GRADING AND DRAINAGE PLAN"
+          }
+        ]
+      },
+      "title": "INDEX OF SHEETS"
+    },
+    {
+      "region_id": 10,
+      "type": "table",
+      "confidence": 0.931907594203949,
+      "bbox": [
+        0.028682900887948497,
+        0.7079642062717014,
+        0.18350163212528936,
+        0.8457532416449652
+      ],
+      "table_structured": {
+        "table_metadata": {
+          "title": "DESIGN PROFESSIONALS",
+          "notes": null,
+          "confidence": 1.0
+        },
+        "header_structure": {
+          "rows": [
+            [
+              "CIVIL ENGINEER/PLANNER:",
+              "",
+              "SURVEY",
+              ""
+            ]
+          ],
+          "normalized_columns": [
+            {
+              "id": "civil_engineer_planner",
+              "name": "Civil Engineer/Planner",
+              "path": [
+                "Design Professionals",
+                "Civil Engineer/Planner"
+              ],
+              "type": "string"
+            },
+            {
+              "id": "civil_engineer_planner_info",
+              "name": "Civil Engineer/Planner Info",
+              "path": [
+                "Design Professionals",
+                "Civil Engineer/Planner Info"
+              ],
+              "type": "string"
+            },
+            {
+              "id": "survey",
+              "name": "Survey",
+              "path": [
+                "Design Professionals",
+                "Survey"
+              ],
+              "type": "string"
+            },
+            {
+              "id": "survey_info",
+              "name": "Survey Info",
+              "path": [
+                "Design Professionals",
+                "Survey Info"
+              ],
+              "type": "string"
+            }
+          ]
+        },
+        "rows": [
+          {
+            "civil_engineer_planner": "NORTHSIDE ENGINEERING, INC.",
+            "civil_engineer_planner_info": "300 SOUTH BELCHER ROAD\nCLEARWATER, FLORIDA  33765\n727-443-2869",
+            "survey": "GEODATA SERVICES, INC.",
+            "survey_info": "1166 KAPP DRIVE\nCLEARWATER, FL.  33765\n(727) 447-1763"
+          }
+        ]
+      },
+      "title": "DESIGN PROFESSIONALS"
+    },
+    {
+      "region_id": 11,
+      "type": "table",
+      "confidence": 0.8611789345741272,
+      "bbox": [
+        0.34223820439091435,
+        0.5762290445963542,
+        0.6028624131944444,
+        0.9471399603949653
+      ],
+      "table_structured": "```json\n{\n  \"table_metadata\": {\n    \"title\": \"SITE DATA\",\n    \"notes\": null,\n    \"confidence\": 1.0\n  },\n  \"header_structure\": {\n    \"rows\": [\n      [\"MATRIX\", \"EXISTING\", \"PROPOSED\", \"ALLOWED/CODE\"]\n    ],\n    \"normalized_columns\": [\n      {\n        \"id\": \"zoning\",\n        \"name\": \"Zoning\",\n        \"path\": [\"EXISTING\", \"ZONING\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"usage_existing\",\n        \"name\": \"Usage\",\n        \"path\": [\"EXISTING\", \"USAGE\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"future_land_use\",\n        \"name\": \"Future Land Use\",\n        \"path\": [\"EXISTING\", \"FUTURE LAND USE\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"upland_existing\",\n        \"name\": \"Upland\",\n        \"path\": [\"EXISTING\", \"LOT AREA (GROSS)\", \"UPLAND\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"wetland_existing\",\n        \"name\": \"Wetland\",\n        \"path\": [\"EXISTING\", \"LOT AREA (GROSS)\", \"WETLAND\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"building_coverage_existing\",\n        \"name\": \"Building Coverage\",\n        \"path\": [\"EXISTING\", \"BUILDING COVERAGE\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"floor_area_ratio_existing\",\n        \"name\": \"Floor Area Ratio (FAR)\",\n        \"path\": [\"EXISTING\", \"FLOOR AREA RATIO (FAR)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"density_existing\",\n        \"name\": \"Density\",\n        \"path\": [\"EXISTING\", \"DENSITY\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"setback_front_existing\",\n        \"name\": \"Bldg. Setback Front (North)\",\n        \"path\": [\"EXISTING\", \"BLDG. SETBACKS\", \"FRONT (NORTH)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"setback_side_west_existing\",\n        \"name\": \"Bldg. Setback Side (West)\",\n        \"path\": [\"EXISTING\", \"BLDG. SETBACKS\", \"SIDE (WEST)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"setback_side_east_existing\",\n        \"name\": \"Bldg. Setback Side (East)\",\n        \"path\": [\"EXISTING\", \"BLDG. SETBACKS\", \"SIDE (EAST)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"setback_rear_existing\",\n        \"name\": \"Bldg. Setback Rear (North)\",\n        \"path\": [\"EXISTING\", \"BLDG. SETBACKS\", \"REAR (NORTH)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"height_existing\",\n        \"name\": \"Bldg. Height\",\n        \"path\": [\"EXISTING\", \"BLDG. HEIGHT\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"vehicular_use_area_existing\",\n        \"name\": \"Vehicular Use Area (V.U.A.)\",\n        \"path\": [\"EXISTING\", \"VEHICULAR USE AREA (V.U.A.)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"interior_landscaping_existing\",\n        \"name\": \"Interior Landscaping\",\n        \"path\": [\"EXISTING\", \"INTERIOR LANDSCAPING\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"impervious_surface_ratio_existing\",\n        \"name\": \"Impervious Surface Ratio (I.S.R.)\",\n        \"path\": [\"EXISTING\", \"IMPERVIOUS SURFACE RATIO: (I.S.R.)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"open_space_existing\",\n        \"name\": \"Open Space\",\n        \"path\": [\"EXISTING\", \"OPEN SPACE: (S.F. & % OF GROSS SITE)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"parking_existing\",\n        \"name\": \"Parking\",\n        \"path\": [\"EXISTING\", \"PARKING\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"zoning_proposed\",\n        \"name\": \"Zoning\",\n        \"path\": [\"PROPOSED\", \"ZONING\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"usage_proposed\",\n        \"name\": \"Usage\",\n        \"path\": [\"PROPOSED\", \"USAGE\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"future_land_use_proposed\",\n        \"name\": \"Future Land Use\",\n        \"path\": [\"PROPOSED\", \"FUTURE LAND USE\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"upland_proposed\",\n        \"name\": \"Upland\",\n        \"path\": [\"PROPOSED\", \"LOT AREA (GROSS)\", \"UPLAND\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"wetland_proposed\",\n        \"name\": \"Wetland\",\n        \"path\": [\"PROPOSED\", \"LOT AREA (GROSS)\", \"WETLAND\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"building_coverage_proposed\",\n        \"name\": \"Building Coverage\",\n        \"path\": [\"PROPOSED\", \"BUILDING COVERAGE\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"floor_area_ratio_proposed\",\n        \"name\": \"Floor Area Ratio (FAR)\",\n        \"path\": [\"PROPOSED\", \"FLOOR AREA RATIO (FAR)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"density_proposed\",\n        \"name\": \"Density\",\n        \"path\": [\"PROPOSED\", \"DENSITY\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"setback_front_proposed\",\n        \"name\": \"Bldg. Setback Front (North)\",\n        \"path\": [\"PROPOSED\", \"BLDG. SETBACKS\", \"FRONT (NORTH)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"setback_side_west_proposed\",\n        \"name\": \"Bldg. Setback Side (West)\",\n        \"path\": [\"PROPOSED\", \"BLDG. SETBACKS\", \"SIDE (WEST)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"setback_side_east_proposed\",\n        \"name\": \"Bldg. Setback Side (East)\",\n        \"path\": [\"PROPOSED\", \"BLDG. SETBACKS\", \"SIDE (EAST)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"setback_rear_proposed\",\n        \"name\": \"Bldg. Setback Rear (North)\",\n        \"path\": [\"PROPOSED\", \"BLDG. SETBACKS\", \"REAR (NORTH)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"height_proposed\",\n        \"name\": \"Bldg. Height\",\n        \"path\": [\"PROPOSED\", \"BLDG. HEIGHT\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"vehicular_use_area_proposed\",\n        \"name\": \"Vehicular Use Area (V.U.A.)\",\n        \"path\": [\"PROPOSED\", \"VEHICULAR USE AREA (V.U.A.)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"interior_landscaping_proposed\",\n        \"name\": \"Interior Landscaping\",\n        \"path\": [\"PROPOSED\", \"INTERIOR LANDSCAPING\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"impervious_surface_ratio_proposed\",\n        \"name\": \"Impervious Surface Ratio (I.S.R.)\",\n        \"path\": [\"PROPOSED\", \"IMPERVIOUS SURFACE RATIO: (I.S.R.)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"open_space_proposed\",\n        \"name\": \"Open Space\",\n        \"path\": [\"PROPOSED\", \"OPEN SPACE: (S.F. & % OF GROSS SITE)\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"parking_proposed\",\n        \"name\": \"Parking\",\n        \"path\": [\"PROPOSED\", \"PARKING\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"zoning_allowed\",\n        \"name\": \"Zoning\",\n        \"path\": [\"ALLOWED/CODE\", \"ZONING\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"usage_allowed\",\n        \"name\": \"Usage\",\n        \"path\": [\"ALLOWED/CODE\", \"USAGE\"],\n        \"type\": \"string\"\n      },\n      {\n        \"id\": \"future_land_use_allowed\",\n        \"name\": \"Future Land Use\",\n        \"path\": [\"ALLOWED/CODE\", \"FUTURE LAND USE\"],\n        \"type\": \"string\"\n     ",
+      "title": ""
+    }
+  ]
+}
